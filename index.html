@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>userInput</title>
+    <link rel='stylesheet' href='style.css'/>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class = title>
+        <p>
+            Useless Morse Translator
+        </p>
+    </div>
+    <form>
+        <div class = input_text>
+            <p id='input'>
+                Input
+            </p>
+        </div>
+        <input type="textarea">
+        <button id='submitButton'>Submit</button>
+
+    </form>
+    <div class = 'output'>
+        
+    </div>
+
+    <div class='catImage'>
+
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.2.0/firebase.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBBP2NfnwI0Gf2o_LHKmWUVENOGub0qA8M",
+    authDomain: "uselessmor.firebaseapp.com",
+    databaseURL: "https://uselessmor.firebaseio.com",
+    projectId: "uselessmor",
+    storageBucket: "uselessmor.appspot.com",
+    messagingSenderId: "195491651673",
+    appId: "1:195491651673:web:c197ba85e747e6faa81148",
+    measurementId: "G-DWRYFP1X4Q"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+</body>
+</html>

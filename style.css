@@ -1,0 +1,26 @@
+
+.title{
+    text-emphasis: none;
+    font-size: 30px;
+    text-align: center;
+}
+.input_text{
+    font-size: 20px;
+}
+input{
+    height: 60px;
+    width: 1000px;
+}
+.output{
+    border: solid gray;
+    border-width: 10px;
+    height: 350px;
+    width: 900px;
+}
+.catImage{
+    border: solid black;
+    border-width: 20px;
+    height: 160px;
+    width: 160px;
+    
+}
