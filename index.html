@@ -5,53 +5,40 @@
     <link rel='stylesheet' href='style.css'/>
     <script src="main.js" defer></script>
 </head>
-<body>
-    <div class = title>
-        <p>
-            Useless Morse Translator
-        </p>
-    </div>
-    <form>
-        <div class = input_text>
-            <p id='input'>
-                Input
+<bod>
+    <div id='title'>
+    
+            <div class = "title">
+            <p>
+                EZ-Report
             </p>
-        </div>
-        <input type="textarea">
-        <button id='submitButton'>Submit</button>
+            </div>
 
-    </form>
-    <div class = 'output'>
+
+            <div class = "info">
+                <p>
+                    This Is our Website called EZ-Report. This website is focused on making it easier
+                    for everyone to report any problems they might have with either potholes, dirty streets,
+                    or any other problems with general cleanlieness. Using this webpage(hopefull eventually app)
+                    is relativley simple. You just need to select the borough your issue is in and which city
+                    official(s) you would like to report it to. This website will send your email
+                    to the city official(s) within about 5-10 minutes.
+                </p>
+            </div>
+
+            <form>
+                <p>Borough</p>
+                <input type="textarea" class="textarea">
+                <button id='submitButton'>Submit</button>
+            </form>
+            <form>
+                <p>Person</p>
+                <input type="textarea" class="textarea2">
+                <button id='submitButton'>Submit</button>
+            </form>
+
+    </div>
         
-    </div>
-
-    <div class='catImage'>
-
-    </div>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.2.0/firebase.js"></script>
-
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyBBP2NfnwI0Gf2o_LHKmWUVENOGub0qA8M",
-    authDomain: "uselessmor.firebaseapp.com",
-    databaseURL: "https://uselessmor.firebaseio.com",
-    projectId: "uselessmor",
-    storageBucket: "uselessmor.appspot.com",
-    messagingSenderId: "195491651673",
-    appId: "1:195491651673:web:c197ba85e747e6faa81148",
-    measurementId: "G-DWRYFP1X4Q"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-</script>
-
 </body>
+</div>
 </html>

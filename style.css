@@ -3,24 +3,31 @@
     text-emphasis: none;
     font-size: 30px;
     text-align: center;
+    border:3px;
+    border-style:solid;
+    border-color:blue;
+    border-radius: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+
 }
-.input_text{
+.info{
+    border:3px;
+    border-style:solid;
+    border-color:aqua;
+    border-radius: 20px;
     font-size: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 60px;
+
 }
-input{
-    height: 60px;
-    width: 1000px;
+.textarea{
+    width: 400px;
+    margin-bottom: 20px;
+    border-style: double;
+    border-color: red  ;
 }
-.output{
-    border: solid gray;
-    border-width: 10px;
-    height: 350px;
-    width: 900px;
-}
-.catImage{
-    border: solid black;
-    border-width: 20px;
-    height: 160px;
-    width: 160px;
-    
+.textarea2{
+    width: 400px;
 }
