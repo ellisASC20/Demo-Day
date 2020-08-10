@@ -19,26 +19,73 @@
                 <p>
                     This Is our Website called EZ-Report. This website is focused on making it easier
                     for everyone to report any problems they might have with either potholes, dirty streets,
-                    or any other problems with general cleanlieness. Using this webpage(hopefull eventually app)
-                    is relativley simple. You just need to select the borough your issue is in and which city
+                    or any other problems with general cleanliness. Using this web page(hopefully it'll eventually be an app)
+                    is relatively simple. You just need to select the borough your issue is in and which city
                     official(s) you would like to report it to. This website will send your email
                     to the city official(s) within about 5-10 minutes.
                 </p>
             </div>
 
-            <form>
-                <p>Borough</p>
-                <input type="textarea" class="textarea">
-                <button id='submitButton'>Submit</button>
+            <form action="borough">
+                <label for="cars">Borough</label>
+                <select id="borough" name="borough">
+                  <option value="brooklyn">Brooklyn</option>
+                  <option value="bronx">Bronx</option>
+                  <option value="queens">Queens</option>
+                  <option value="manhattan">Manhattan</option>
+                  <option value="staten_island">Staten Island</option>
+                </select>
+                <button type="button" id='submitB'>Submit</button>
             </form>
-            <form>
-                <p>Person</p>
-                <input type="textarea" class="textarea2">
-                <button id='submitButton'>Submit</button>
-            </form>
+            
 
-    </div>
+            <form method="post" action="https://www.example.com/cgi-bin/FormMail.pl" accept-charset="ISO-8859-1" onsubmit="var   originalCharset = document.charset; document.charset = 'ISO-8859-1';
+  window.onbeforeunload = function (){document.charset=originalCharset;};">:
+
+    Your Name    <input name="realname" />
+    Your Email   <input name="email" /> 
+    Your Message 
+    <textarea cols="40" rows="10" name="Message">
+    </textarea> 
+    <input type="hidden" name="recipient" value="simmons.ellis725@gmail.com" />
+    <input type="hidden" name="subject" value="Subject" />
+    <input type="hidden" name="redirect"  value="https://www.example.com/thanks.html" />
+    <input type="hidden" name="missing_fields_redirect"  value="https://www.example.com/error.html" />
+    <input type="hidden" name="required" value="realname,email,Message" />
+    <input type="submit" value="Send" /> 
+</form>
+
         
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCugA8tHj4fyYbi-aNyzr1rAxycNNxiQt0",
+    authDomain: "ez-report-31e07.firebaseapp.com",
+    databaseURL: "https://ez-report-31e07.firebaseio.com",
+    projectId: "ez-report-31e07",
+    storageBucket: "ez-report-31e07.appspot.com",
+    messagingSenderId: "236604856855",
+    appId: "1:236604856855:web:a5bedc5f05067e97219a52",
+    measurementId: "G-GCZGDE7LMF"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+
+
+
+
+
+
 </body>
 </div>
 </html>
