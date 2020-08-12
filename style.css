@@ -35,10 +35,6 @@ body{
     border-style: solid;
     border-color: red;
 }
-#parent{
-    display:flex;
-    justify-content: space-evenly;
-}
 .emailer{
     border-bottom: 50px;
 }

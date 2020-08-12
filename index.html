@@ -27,9 +27,20 @@
                     to the city official(s) within about 5-10 minutes.
                 </p>
 
-
-
-
+                <div id='parent'>
+                  <div>
+                    <form action="borough">
+                        <label for="cars">Borough:</label>
+                      <select id="borough" name="borough">
+                        <option value="brooklyn">Brooklyn</option>
+                        <option value="bronx">Bronx</option>
+                        <option value="queens">Queens</option>
+                        <option value="manhattan">Manhattan</option>
+                        <option value="staten_island">Staten Island</option>
+                      </select>
+                         <button type="button" id='submitB'>Submit</button>
+                  </div>  
+                </form>
           
    <!-- The core Firebase JS SDK is always required and must be listed first -->
           <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
@@ -80,31 +91,10 @@
     <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="themasterofbacon123@gmail.com"
           action="https://script.google.com/macros/s/AKfycbxyJ4cZjrAiVem6RpoA4EpGLbuCYxxOr9tIrIaG43YwS4eMmYC9/exec">
 
-
-
-      <div id='parent'>
-
-      </div>
-      <div id='parent'>
-         <div>
-           <form action="borough">
-               <label for="cars">Borough:</label>
-             <select id="borough" name="borough">
-               <option value="brooklyn">Brooklyn</option>
-               <option value="bronx">Bronx</option>
-               <option value="queens">Queens</option>
-               <option value="manhattan">Manhattan</option>
-               <option value="staten_island">Staten Island</option>
-             </select>
-                <button type="button" id='submitB'>Submit</button>
-         </div>  
-              </form>
-          
-      </div>
         <div>
         <label for="name">Name: </label>
         <input id="name" name="name" placeholder="What your Mom calls you" />
-        </div>div
+        </div>
         <br>
 
 
@@ -125,7 +115,7 @@
         <button class="button-success pure-button button-xlarge">
             <i class="fa fa-paper-plane"></i>&nbsp;Send
         </button>
-        </div>fiv
+        </div>
     </form>
 
     <!-- Customise the Thankyou Message People See when they submit the form: -->
