@@ -1,17 +1,17 @@
 img{
     width: 125px;
-    
+    padding-top:1px;
+    padding-left: 1px;
 }
-.title{
-    text-emphasis: none;
-    font-size: 30px;
-    text-align: center;
-    border:3px;
-    border-style:solid;
-    border-color:blue;
-    border-radius: 20px;
-    margin-bottom: 30px;
+body{
+    background-color: lightgray;
+}
 
+.title{
+    color: darkred;
+    text-emphasis: none;
+    font-size: 50px;
+    text-align: center;
 }
 .info{
     border:3px;
@@ -19,13 +19,26 @@ img{
     border-color:aqua;
     border-radius: 20px;
     font-size: 20px;
+    margin-top: 15px;
     margin-left: 30px;
     margin-right: 30px;
     margin-bottom: 60px;
 }
 .textarea{
     width: 400px;
-    margin-bottom: 20px;
     border-style: double;
     border-color: red  ;
+}
+#complaint{
+    width: 700px;
+    height: 150px;
+    border-style: solid;
+    border-color: red;
+}
+#parent{
+    display:flex;
+    justify-content: space-evenly;
+}
+.emailer{
+    border-bottom: 50px;
 }

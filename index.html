@@ -6,15 +6,19 @@
     <script src="main.js" defer></script>
 </head>
 <body>
-
+  
+        
+          <img src="logo.jpg" align="left" />
             <div class = "title">
-            <img src="logo.jpg" align="left" /><p>EZ-Report</p>
+            <p><strong>EZ-Report</strong></p>
             </div>
+      
+        
 
 
             <div class = "info">
                 <p>
-                    Hello, We are the EZ-Report coding team. Our mission for this websiteis to make it easier to report
+                    Hello, we are the EZ-Report coding team. Our mission for this website is to make it easier to report
                     small issues like potholes, unpaved strees, crossing sign malfunctions, and stop light errors
                     so they don't become larger issues. We want to make it so people in every city can easily and quickly
                     report problems and move on with their days. Using this web page(hopefully it'll eventually be an app)
@@ -22,67 +26,117 @@
                     official(s) you would like to report it to. This website will send your email
                     to the city official(s) within about 5-10 minutes.
                 </p>
-            </div>
-
-            <form action="borough">
-                <label for="cars">Borough</label>
-                <select id="borough" name="borough">
-                  <option value="brooklyn">Brooklyn</option>
-                  <option value="bronx">Bronx</option>
-                  <option value="queens">Queens</option>
-                  <option value="manhattan">Manhattan</option>
-                  <option value="staten_island">Staten Island</option>
-                </select>
-                <button type="button" id='submitB'>Submit</button>
-            </form>
 
 
-            <form method="post" action="https://www.example.com/cgi-bin/FormMail.pl" accept-charset="ISO-8859-1" onsubmit="var   originalCharset = document.charset; document.charset = 'ISO-8859-1';
-  window.onbeforeunload = function (){document.charset=originalCharset;};">:
 
-    Your Name    <input name="realname" />
-    Your Email   <input name="email" /> 
-    Your Message 
-    <textarea cols="40" rows="10" name="Message">
-    </textarea> 
-    <input type="hidden" name="recipient" value="simmons.ellis725@gmail.com" />
-    <input type="hidden" name="subject" value="Subject" />
-    <input type="hidden" name="redirect"  value="https://www.example.com/thanks.html" />
-    <input type="hidden" name="missing_fields_redirect"  value="https://www.example.com/error.html" />
-    <input type="hidden" name="required" value="realname,email,Message" />
-    <input type="submit" value="Send" /> 
-</form>
 
-        
+          
    <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+          <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-analytics.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase.js"></script>
 
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyCugA8tHj4fyYbi-aNyzr1rAxycNNxiQt0",
-    authDomain: "ez-report-31e07.firebaseapp.com",
-    databaseURL: "https://ez-report-31e07.firebaseio.com",
-    projectId: "ez-report-31e07",
-    storageBucket: "ez-report-31e07.appspot.com",
-    messagingSenderId: "236604856855",
-    appId: "1:236604856855:web:a5bedc5f05067e97219a52",
-    measurementId: "G-GCZGDE7LMF"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-</script>
-
-
-
+               <script>
+                // Your web app's Firebase configuration
+                var firebaseConfig = {
+                  apiKey: "AIzaSyCugA8tHj4fyYbi-aNyzr1rAxycNNxiQt0",
+                  authDomain: "ez-report-31e07.firebaseapp.com",
+                  databaseURL: "https://ez-report-31e07.firebaseio.com",
+                  projectId: "ez-report-31e07",
+                  storageBucket: "ez-report-31e07.appspot.com",
+                  messagingSenderId: "236604856855",
+                  appId: "1:236604856855:web:a5bedc5f05067e97219a52",
+                  measurementId: "G-GCZGDE7LMF"
+               };
+                 // Initialize Firebase
+                firebase.initializeApp(firebaseConfig);
+                firebase.analytics();
+              </script>
+ 
 
 
 
+<div class="emailer">
+  <title>Contact Form Example</title>
+</head>
+
+<body>
+    <h2 class="content-head is-center">Contact Us!</h2>
+    <aside>
+        <p>
+            We would <em>love</em> to hear from you!
+        </p>
+        <p>
+            Please use the <b><em>Contact Form</em></b>
+            to send us a message.
+        </p>
+    </aside>
+
+   
+
+
+    <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="themasterofbacon123@gmail.com"
+          action="https://script.google.com/macros/s/AKfycbxyJ4cZjrAiVem6RpoA4EpGLbuCYxxOr9tIrIaG43YwS4eMmYC9/exec">
+
+
+
+      <div id='parent'>
+
+      </div>
+      <div id='parent'>
+         <div>
+           <form action="borough">
+               <label for="cars">Borough:</label>
+             <select id="borough" name="borough">
+               <option value="brooklyn">Brooklyn</option>
+               <option value="bronx">Bronx</option>
+               <option value="queens">Queens</option>
+               <option value="manhattan">Manhattan</option>
+               <option value="staten_island">Staten Island</option>
+             </select>
+                <button type="button" id='submitB'>Submit</button>
+         </div>  
+              </form>
+          
+      </div>
+        <div>
+        <label for="name">Name: </label>
+        <input id="name" name="name" placeholder="What your Mom calls you" />
+        </div>div
+        <br>
+
+
+        <div>
+        <label for="message">Message: </label>
+        <textarea id="message" name="message" rows="10"
+                  placeholder="Tell us what's on your mind..."></textarea>
+        </div>
+        <br>
+
+        <div>
+        <label for="email"><em>Your</em> Email Address:</label>
+        <input id="email" name="email" type="email" value=""
+               required placeholder="your.name@email.com" />
+
+
+
+        <button class="button-success pure-button button-xlarge">
+            <i class="fa fa-paper-plane"></i>&nbsp;Send
+        </button>
+        </div>fiv
+    </form>
+
+    <!-- Customise the Thankyou Message People See when they submit the form: -->
+    <div style="display:none;" id="thankyou_message">
+        <h2>
+            <em>Thanks</em> for contacting us!
+            We will get back to you soon!
+        </h2>
+    </div>
+
+  </div>
 
 </body>
 </html>

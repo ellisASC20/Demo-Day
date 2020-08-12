@@ -6,14 +6,11 @@ button.addEventListener("click",updateDB);
 
 function updateDB(event){
     event.preventDefault();
-    const borough = boroughElement.value;
 
-    boroughElement.value = "";
-
-    console.log(borough)
+    console.log(borough.value)
 
     let boroughvalue = {
-        Borough : borough
+        choice : borough.value
     }
-    database.push(boruoghvalue);
+    db.push(boroughvalue);
 }
