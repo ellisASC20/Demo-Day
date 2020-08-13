@@ -1,10 +1,12 @@
 img{
-    width: 125px;
-    padding-top:1px;
+    width: 100px;
     padding-left: 1px;
+    padding-top: -1% ;
+
 }
 body{
-    background-color: lightgray;
+    background-image: url("https://i.pinimg.com/originals/77/78/b2/7778b26984b481ac6a5bb9b172c06287.png");
+    background-color: #cccccc;
 }
 
 .title{
@@ -12,6 +14,11 @@ body{
     text-emphasis: none;
     font-size: 50px;
     text-align: center;
+    border:0px;
+    border-style:solid;
+}
+.parent{
+    margin-bottom: 50px;
 }
 .info{
     border:3px;
@@ -24,11 +31,6 @@ body{
     margin-right: 30px;
     margin-bottom: 60px;
 }
-.textarea{
-    width: 400px;
-    border-style: double;
-    border-color: red  ;
-}
 #complaint{
     width: 700px;
     height: 150px;
@@ -37,4 +39,5 @@ body{
 }
 .emailer{
     border-bottom: 50px;
+    border-top: 20px;
 }

@@ -8,7 +8,7 @@
 <body>
   
         
-          <img src="logo.jpg" align="left" />
+          <img src="logo.png" align="left" />
             <div class = "title">
             <p><strong>EZ-Report</strong></p>
             </div>
@@ -26,21 +26,7 @@
                     official(s) you would like to report it to. This website will send your email
                     to the city official(s) within about 5-10 minutes.
                 </p>
-
-                <div id='parent'>
-                  <div>
-                    <form action="borough">
-                        <label for="cars">Borough:</label>
-                      <select id="borough" name="borough">
-                        <option value="brooklyn">Brooklyn</option>
-                        <option value="bronx">Bronx</option>
-                        <option value="queens">Queens</option>
-                        <option value="manhattan">Manhattan</option>
-                        <option value="staten_island">Staten Island</option>
-                      </select>
-                         <button type="button" id='submitB'>Submit</button>
-                  </div>  
-                </form>
+                
           
    <!-- The core Firebase JS SDK is always required and must be listed first -->
           <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
@@ -70,27 +56,33 @@
 
 
 <div class="emailer">
-  <title>Contact Form Example</title>
-</head>
 
-<body>
-    <h2 class="content-head is-center">Contact Us!</h2>
-    <aside>
-        <p>
-            We would <em>love</em> to hear from you!
-        </p>
-        <p>
-            Please use the <b><em>Contact Form</em></b>
-            to send us a message.
-        </p>
-    </aside>
+  <h2 class="content-head is-center">Contact Us!</h2>
+                
+  <aside>
+      <p>
+          We would <em>love</em> to hear from you!
+      </p>
+  </aside>
 
-   
+  <div id='parent'>
+      <form action="borough">
+          <label for="cars">Borough:</label>
+        <select id="borough" name="borough">
+          <option value="brooklyn">Brooklyn</option>
+          <option value="bronx">Bronx</option>
+          <option value="queens">Queens</option>
+          <option value="manhattan">Manhattan</option>
+          <option value="staten_island">Staten Island</option>
+        </select>
+           <button type="button" id='submitB'>Submit</button>
+          </div>  
+  </form>
 
 
     <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="themasterofbacon123@gmail.com"
           action="https://script.google.com/macros/s/AKfycbxyJ4cZjrAiVem6RpoA4EpGLbuCYxxOr9tIrIaG43YwS4eMmYC9/exec">
-
+        
         <div>
         <label for="name">Name: </label>
         <input id="name" name="name" placeholder="What your Mom calls you" />
