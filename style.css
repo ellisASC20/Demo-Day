@@ -10,25 +10,22 @@ body{
 }
 
 .title{
-    color: darkred;
+    color: white;
     text-emphasis: none;
     font-size: 50px;
-    text-align: center;
-    border:0px;
-    border-style:solid;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align:center;
 }
 .parent{
     margin-bottom: 50px;
 }
 .info{
-    border:3px;
-    border-style:solid;
-    border-color:aqua;
     border-radius: 20px;
+    padding-top:15px;
     font-size: 20px;
-    margin-top: 15px;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
     margin-bottom: 60px;
 }
 #complaint{
@@ -40,4 +37,11 @@ body{
 .emailer{
     border-bottom: 50px;
     border-top: 20px;
+}
+.complaint_text{
+    color: black;
+}
+.footer{
+    font-size: small;
+    text-align:center;
 }
