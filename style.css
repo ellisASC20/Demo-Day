@@ -31,8 +31,7 @@ body{
 #complaint{
     width: 700px;
     height: 150px;
-    border-style: solid;
-    border-color: red;
+
 }
 .emailer{
     border-bottom: 50px;

@@ -26,34 +26,6 @@
                     official(s) you would like to report it to. This website will send your email
                     to the city official(s) within about 5-10 minutes.
                 </p>
-                
-          
-   <!-- The core Firebase JS SDK is always required and must be listed first -->
-          <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-     <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase.js"></script>
-
-               <script>
-                // Your web app's Firebase configuration
-                var firebaseConfig = {
-                  apiKey: "AIzaSyCugA8tHj4fyYbi-aNyzr1rAxycNNxiQt0",
-                  authDomain: "ez-report-31e07.firebaseapp.com",
-                  databaseURL: "https://ez-report-31e07.firebaseio.com",
-                  projectId: "ez-report-31e07",
-                  storageBucket: "ez-report-31e07.appspot.com",
-                  messagingSenderId: "236604856855",
-                  appId: "1:236604856855:web:a5bedc5f05067e97219a52",
-                  measurementId: "G-GCZGDE7LMF"
-               };
-                 // Initialize Firebase
-                firebase.initializeApp(firebaseConfig);
-                firebase.analytics();
-              </script>
- 
-
-
 
 <div class="emailer">
   <aside>
@@ -62,19 +34,6 @@
       </p>
   </aside>
 
-  <div id='parent'>
-      <form action="borough">
-          <label for="cars">Borough:</label>
-        <select id="borough" name="borough">
-          <option value="brooklyn">Brooklyn</option>
-          <option value="bronx">Bronx</option>
-          <option value="queens">Queens</option>
-          <option value="manhattan">Manhattan</option>
-          <option value="staten_island">Staten Island</option>
-        </select>
-           <button type="button" id='submitB'>Submit</button>
-          </div>  
-  </form>
 
   <div id=parent2>
     <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="themasterofbacon123@gmail.com"
@@ -86,18 +45,23 @@
         </div>
         <br>
 
-
         <div>
         <label for="message">Complaint: </label>
         <textarea id="message" name="message" rows="10"
-                  placeholder="Tell us what's on your mind..."></textarea>
+        placeholder="Tell us what's on your mind..."></textarea>
         </div>
         <br>
 
+        <div >
+        <label for="location">Location:</label>
+        <input id="location" name="location" placeholder="Intersection, City, State, Zip" />
+        </div>  
+
         <div>
-        <label for="email"><em>Your</em> Email Address:</label>
+        <label for="email">Your Email Address:</label>
         <input id="email" name="email" type="email" value=""
-               required placeholder="your.name@email.com" />
+        required placeholder="your.name@email.com" />
+        </div>
 
 
 
