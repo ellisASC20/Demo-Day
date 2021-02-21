@@ -2,43 +2,37 @@ img{
     width: 100px;
     padding-left: 1px;
     padding-top: -1% ;
-
 }
-body{
-    background-image: url("https://i.pinimg.com/originals/77/78/b2/7778b26984b481ac6a5bb9b172c06287.png");
-    background-color: #cccccc;
+
+header{
+    padding-bottom: 17px;
 }
 
 .title{
-    color: white;
+    color: black;
     text-emphasis: none;
     font-size: 50px;
     margin-left: 30%;
     margin-right: 30%;
     text-align:center;
 }
-.parent{
-    margin-bottom: 50px;
-}
+
 .info{
     border-radius: 20px;
-    padding-top:15px;
-    font-size: 20px;
+    padding: top 5px;
+    font-size: 22px;
     margin-left: 60px;
     margin-right: 60px;
     margin-bottom: 60px;
 }
-#complaint{
-    width: 700px;
-    height: 150px;
-
+.complaint{
+    font-size: 25px;
 }
+
 .emailer{
     border-bottom: 50px;
-    border-top: 20px;
-}
-.complaint_text{
-    color: black;
+    border-top: 10px;
+    font-size: 25px;
 }
 .footer{
     font-size: small;

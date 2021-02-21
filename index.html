@@ -5,85 +5,79 @@
     <link rel='stylesheet' href='style.css'/>
     <script src="main.js" defer></script>
 </head>
-<body>
-  
-        
-          <img src="logo.png" align="left" />
-            <div class = "title">
-            <p><strong>EZ-Report</strong></p>
-            </div>
-      
-        
 
-
-            <div class = "info">
-                <p>
-                    Hello, we are the EZ-Report coding team. Our mission for this website is to make it easier to report
-                    small issues like potholes, unpaved strees, crossing sign malfunctions, and stop light errors
-                    so they don't become larger issues. We want to make it so people in every city can easily and quickly
-                    report problems and move on with their days. Using this web page(hopefully it'll eventually be an app)
-                    is relatively simple. You just need to select the borough your issue is in and which city
-                    official(s) you would like to report it to. This website will send your email
-                    to the city official(s) within about 5-10 minutes.
-                </p>
-
-<div class="emailer">
-  <aside>
-      <p class=complaint_text>
-          <strong>Your Complaint Here!</strong>
+<body> <!--Title and Logo-->
+    <div class="header">
+      <img src="logo.png" align="left" />
+        <div class = "title">
+          <p><strong>EZ-Report</strong></p>
+        </div>
+    </div>
+  <!--Information about the website-->
+    <div class = "info">
+      <p>
+        Hello, we are the EZ-Report coding team. Our mission for this website is to make it easier to report
+        small issues like potholes, unpaved strees, crossing sign malfunctions, and stop light errors, 
+        so they don't become larger issues. We want to make it so people in every city can easily and quickly
+        report problems and move on with their days. Using this web page (hopefully it'll eventually be an app)
+        is relatively simple. You just need to select the borough your issue is in and which city
+        official(s) you would like to report it to. This website will send your email
+        to the city Road Repair People within about 5-10 minutes.
       </p>
-  </aside>
+    </div>
+    
+    <aside>
+      <p class="complaint">
+         <strong>Write Complaint</strong>
+      </p>
+    </aside>
 
+   
 
-  <div id=parent2>
-    <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="themasterofbacon123@gmail.com"
+<!-- Dec, 27, 2020: This class sends the data to the google slides to generate an email which is sent to the office responsible for repairs. -->
+    <div class="emailer">
+      <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="themasterofbacon123@gmail.com"
           action="https://script.google.com/macros/s/AKfycbxyJ4cZjrAiVem6RpoA4EpGLbuCYxxOr9tIrIaG43YwS4eMmYC9/exec">
-      
+            
         <div>
-        <label for="name">Name: </label>
-        <input id="name" name="name" placeholder="First, Last" />
+          <label for="name"><br>Name:<br></label><!--Name that gets sent in Email-->
+          <input id="name" name="name" placeholder="First, Last" />
         </div>
-        <br>
 
         <div>
-        <label for="message">Complaint: </label>
-        <textarea id="message" name="message" rows="10"
-        placeholder="Tell us what's on your mind..."></textarea>
+          <label for="email"><br>Your Email Address:<br></label><!--Email for follow up-->
+          <input id="email" name="email" type="email" value=""
+          required placeholder="your.name@email.com" />
         </div>
-        <br>
 
-        <div >
-        <label for="location">Location:</label>
-        <input id="location" name="location" placeholder="Intersection, City, State, Zip" />
+          
+        <div>
+          <label for="Intersection"><br>Location and Nearest Street:<br></label><!--Location of problem-->
+          <input id="Intersection" name="Street 1, Street 2" placeholder="Street 1, Street 2, City, State, Zip">
         </div>  
+  
 
         <div>
-        <label for="email">Your Email Address:</label>
-        <input id="email" name="email" type="email" value=""
-        required placeholder="your.name@email.com" />
+          <label for="message"><br> Complaint: <br></label><!--Description of problem-->
+          <textarea id="message" name="message" rows="5" placeholder="Whats the issue?"></textarea>
         </div>
-
-
 
         <button class="button-success pure-button button-xlarge">
-            <i class="fa fa-paper-plane"></i>&nbsp;Send
+            <i class="fa fa-paper-plane"></i>&nbsp;send
         </button>
-        </div>
-    </form>
-  </div>
 
-    <!-- Customise the Thankyou Message People See when they submit the form: -->
-    <div style="display:none;" id="thankyou_message">
+      </form>
+    </div>
+
+    <!-- This class works fine currently. It was last tested on Dec 27, 2020. Insert next steps here -->
+
         <h2>
-            <em>Thanks</em> for contacting us!
-            We will get back to you soon!
+            Thanks for contacting us!
         </h2>
-      </div>
-  </div>
 
     <fotter>
       <div class="footer">
-        <p>Made By: Ellis S, Fernando N, Gabe L, Jaiden F. 2020</p>
+        <p>Made By: Ellis S, Fernando N. 2020</p>
       </div>
     </fotter>
 
